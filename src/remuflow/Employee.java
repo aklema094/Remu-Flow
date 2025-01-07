@@ -6,9 +6,10 @@ abstract class Employee {
     private String category;
     private int id;
     
-    Employee(String name, int id){
+    Employee(String name, int id, String cat){
         this.name = name;
         this.id = id;
+        this.category = cat;
     }
     public String name(){
         return name;

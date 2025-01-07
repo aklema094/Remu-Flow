@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package remuflow;
 
-/**
- *
- * @author user
- */
-public class PartTimeEmployee {
+
+public class PartTimeEmployee extends Employee{
+    
+    int totalHours;
+    double rateofHour;
+    PartTimeEmployee(String name, int id, String cat, int th, double rh){
+        super(name,id,cat);
+        this.totalHours = th;
+        this.rateofHour = rh;
+    }
+
+    @Override
+    public double calculateSalary() {
+      return totalHours * rateofHour;
+    }
+    
     
 }
