@@ -24,7 +24,7 @@ abstract class Employee {
     
     @Override
     public String toString(){
-        return "ID : "+id+"\nName : "+name+"\nCategory : "+category+"\n Salary : "+calculateSalary()+" ";
+        return "ID : "+id+"\nName : "+name+"\nCategory : "+category+"\nSalary : "+calculateSalary()+" ";
     }
     
 }
