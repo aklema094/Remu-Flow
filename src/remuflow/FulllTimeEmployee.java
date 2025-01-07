@@ -6,8 +6,8 @@ public class FulllTimeEmployee extends Employee{
     
     double monthlySalary;
     
-     FulllTimeEmployee(String name, int id, double salary){
-         super(name,id);
+     FulllTimeEmployee(String name, int id,String cat, double salary){
+         super(name,id,cat);
          this.monthlySalary = salary;
      }
     @Override
